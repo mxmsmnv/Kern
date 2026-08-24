@@ -1,0 +1,2525 @@
+.ProcessKern .KernTabs {
+	margin-bottom: 1.5rem;
+	row-gap: .75rem;
+}
+
+.ProcessKern .uk-button,
+.ProcessKern .uk-button:hover,
+.ProcessKern .uk-button:focus,
+.ProcessKern .uk-button:active,
+.ProcessKern .uk-button:visited {
+	text-decoration: none !important;
+}
+
+.ProcessKern .KernConfigOverview > .InputfieldContent {
+	padding: 0;
+}
+
+.ProcessKern .KernConfigHero {
+	background: var(--pw-main-background);
+	border: 1px solid var(--pw-border-color);
+	border-radius: var(--pw-input-radius);
+	color: var(--pw-text-color);
+	overflow: hidden;
+}
+
+.ProcessKern .KernConfigHeroHead {
+	align-items: flex-start;
+	display: flex;
+	gap: 1.5rem;
+	justify-content: space-between;
+	padding: 1.5rem;
+}
+
+.ProcessKern .KernConfigHeroHead > div {
+	max-width: 50rem;
+}
+
+.ProcessKern .KernConfigEyebrow {
+	color: var(--pw-muted-color);
+	display: block;
+	font-size: .7rem;
+	font-weight: 700;
+	letter-spacing: .08em;
+	line-height: 1.2;
+	margin-bottom: .45rem;
+	text-transform: uppercase;
+}
+
+.ProcessKern .KernConfigHero h2 {
+	font-size: clamp(1.5rem, 2.5vw, 2rem);
+	line-height: 1.15;
+	margin: 0;
+}
+
+.ProcessKern .KernConfigHeroHead p {
+	color: var(--pw-muted-color);
+	margin: .65rem 0 0;
+}
+
+.ProcessKern .KernConfigState {
+	align-items: center;
+	background: var(--pw-button-muted-background);
+	border: 1px solid var(--pw-button-muted-border);
+	border-radius: 999px;
+	color: var(--pw-text-color);
+	display: inline-flex;
+	flex: 0 0 auto;
+	font-size: .78rem;
+	font-weight: 600;
+	gap: .45rem;
+	line-height: 1;
+	padding: .55rem .75rem;
+}
+
+.ProcessKern .KernConfigState > span {
+	background: var(--pw-muted-color);
+	border-radius: 50%;
+	height: .55rem;
+	width: .55rem;
+}
+
+.ProcessKern .KernConfigState--ready > span {
+	background: var(--pw-alert-success);
+	box-shadow: 0 0 0 .2rem color-mix(in srgb, var(--pw-alert-success) 18%, transparent);
+}
+
+.ProcessKern .KernConfigState--attention > span {
+	background: var(--pw-alert-warning);
+	box-shadow: 0 0 0 .2rem color-mix(in srgb, var(--pw-alert-warning) 18%, transparent);
+}
+
+.ProcessKern .KernConfigSummary {
+	border-bottom: 1px solid var(--pw-border-color);
+	border-top: 1px solid var(--pw-border-color);
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	margin: 0;
+}
+
+.ProcessKern .KernConfigSummary > div {
+	box-sizing: border-box;
+	min-width: 0;
+	padding: 1rem 1.5rem;
+}
+
+.ProcessKern .KernConfigSummary > div + div {
+	border-left: 1px solid var(--pw-border-color);
+}
+
+.ProcessKern .KernConfigSummary dt {
+	color: var(--pw-muted-color);
+	font-size: .72rem;
+	font-weight: 600;
+	letter-spacing: .04em;
+	text-transform: uppercase;
+}
+
+.ProcessKern .KernConfigSummary dd {
+	font-size: 1rem;
+	font-weight: 600;
+	line-height: 1.25;
+	margin: .35rem 0 0;
+	overflow-wrap: anywhere;
+}
+
+.ProcessKern .KernConfigActions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: .75rem;
+	padding: 1rem 1.5rem;
+}
+
+.ProcessKern .KernConfigSection {
+	border-color: var(--pw-border-color);
+}
+
+.ProcessKern .KernConfigSection > .InputfieldContent > .description {
+	max-width: 68rem;
+}
+
+.ProcessKern .KernConfigSection--danger > .InputfieldHeader {
+	color: var(--pw-alert-danger);
+}
+
+@media (max-width: 959px) {
+	.ProcessKern .KernConfigSummary {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.ProcessKern .KernConfigSummary > div:nth-child(3) {
+		border-left: 0;
+	}
+
+	.ProcessKern .KernConfigSummary > div:nth-child(n+3) {
+		border-top: 1px solid var(--pw-border-color);
+	}
+}
+
+@media (max-width: 639px) {
+	.ProcessKern .KernConfigHeroHead {
+		align-items: stretch;
+		flex-direction: column;
+		gap: 1rem;
+		padding: 1rem;
+	}
+
+	.ProcessKern .KernConfigState {
+		align-self: flex-start;
+	}
+
+	.ProcessKern .KernConfigSummary {
+		grid-template-columns: 1fr;
+	}
+
+	.ProcessKern .KernConfigSummary > div + div,
+	.ProcessKern .KernConfigSummary > div:nth-child(3) {
+		border-left: 0;
+		border-top: 1px solid var(--pw-border-color);
+	}
+
+	.ProcessKern .KernConfigSummary > div {
+		padding: .85rem 1rem;
+	}
+
+	.ProcessKern .KernConfigActions {
+		padding: 1rem;
+	}
+
+	.ProcessKern .KernConfigActions .uk-button {
+		box-sizing: border-box;
+		width: 100%;
+	}
+}
+
+.ProcessKern .KernWorkspaceHead,
+.ProcessKern .KernCardHead,
+.ProcessKern .KernQueueItem,
+.ProcessKern .KernWorkspaceActions,
+.ProcessKern .KernActions {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	gap: .75rem;
+}
+
+.ProcessKern .KernQueueSummary {
+	align-items: flex-end;
+	display: flex;
+	flex: 0 0 auto;
+	flex-direction: column;
+	line-height: 1.1;
+}
+
+.ProcessKern .KernQueueSummary strong {
+	font-size: 1.75rem;
+}
+
+.ProcessKern .KernQueueSummary span {
+	color: var(--pw-muted-color);
+	font-size: .75rem;
+	margin-top: .25rem;
+}
+
+.ProcessKern .KernWorkspaceHead {
+	margin-bottom: 1rem;
+}
+
+.ProcessKern .KernWorkspaceActions,
+.ProcessKern .KernActions {
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.ProcessKern .KernStatCard {
+	box-sizing: border-box;
+	color: var(--pw-text-color);
+	display: block;
+	min-height: 8rem;
+	position: relative;
+	text-decoration: none;
+}
+
+.ProcessKern .KernStatCard:hover {
+	color: var(--pw-text-color);
+	text-decoration: none;
+}
+
+.ProcessKern .KernStatCard .uk-text-meta,
+.ProcessKern .KernStatValue {
+	display: block;
+}
+
+.ProcessKern .KernStatValue {
+	font-size: clamp(1.8rem, 3vw, 2.5rem);
+	line-height: 1;
+	margin-top: .75rem;
+}
+
+.ProcessKern .KernStatMeta {
+	color: var(--pw-muted-color);
+	display: block;
+	font-size: .72rem;
+	line-height: 1.35;
+	margin-top: .55rem;
+}
+
+.ProcessKern .KernDashboardIntro {
+	align-items: end;
+	border-bottom: 1px solid var(--pw-border-color);
+	display: grid;
+	gap: 1.5rem;
+	grid-template-columns: minmax(0, 1fr) auto;
+	margin-bottom: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+
+.ProcessKern .KernDashboardIntro > div:first-child {
+	max-width: 52rem;
+}
+
+.ProcessKern .KernDashboardIntroAside {
+	align-items: flex-end;
+	display: grid;
+	gap: .75rem;
+	justify-items: end;
+}
+
+.ProcessKern .KernDashboardHealth {
+	align-items: center;
+	background: var(--pw-main-background);
+	border: 1px solid var(--pw-border-color);
+	display: flex;
+	gap: .75rem;
+	min-width: 14rem;
+	padding: .75rem 1rem;
+}
+
+.ProcessKern .KernDashboardHealthDot {
+	background: var(--pw-alert-success);
+	border-radius: 50%;
+	box-shadow: 0 0 0 .25rem color-mix(in srgb, var(--pw-alert-success) 16%, transparent);
+	flex: 0 0 .65rem;
+	height: .65rem;
+	width: .65rem;
+}
+
+.ProcessKern .KernDashboardHealth[data-state="warning"] .KernDashboardHealthDot {
+	background: var(--pw-alert-warning);
+	box-shadow: 0 0 0 .25rem color-mix(in srgb, var(--pw-alert-warning) 16%, transparent);
+}
+
+.ProcessKern .KernDashboardHealth[data-state="danger"] .KernDashboardHealthDot {
+	background: var(--pw-alert-danger);
+	box-shadow: 0 0 0 .25rem color-mix(in srgb, var(--pw-alert-danger) 16%, transparent);
+}
+
+.ProcessKern .KernDashboardHealth strong,
+.ProcessKern .KernDashboardHealth small {
+	display: block;
+}
+
+.ProcessKern .KernDashboardHealth small {
+	color: var(--pw-muted-color);
+	margin-top: .15rem;
+}
+
+.ProcessKern .KernDashboardPanels {
+	align-items: stretch;
+}
+
+.ProcessKern .KernDashboardPanels > div,
+.ProcessKern .KernDashboardPanels .KernDashboardPanel {
+	height: 100%;
+}
+
+.ProcessKern .KernDashboardSummary {
+	background: var(--pw-main-background);
+	border: 1px solid var(--pw-border-color);
+	display: grid;
+	grid-template-columns: repeat(6, minmax(0, 1fr));
+	margin: 1rem 0;
+}
+
+.ProcessKern .KernDashboardSummary > a {
+	align-items: center;
+	box-sizing: border-box;
+	color: var(--pw-text-color);
+	display: grid;
+	gap: .65rem;
+	grid-template-columns: auto minmax(0, 1fr);
+	min-width: 0;
+	padding: .8rem;
+	text-decoration: none;
+}
+
+.ProcessKern .KernDashboardSummary > a + a {
+	border-left: 1px solid var(--pw-border-color);
+}
+
+.ProcessKern .KernDashboardSummary > a:hover,
+.ProcessKern .KernDashboardSummary > a:focus {
+	background: var(--pw-button-muted-background);
+	color: var(--pw-text-color);
+	text-decoration: none;
+}
+
+.ProcessKern .KernDashboardSummaryIcon {
+	color: var(--pw-muted-color);
+}
+
+.ProcessKern .KernDashboardSummary > a > span:last-child {
+	display: grid;
+	gap: .1rem;
+	min-width: 0;
+}
+
+.ProcessKern .KernDashboardSummary strong {
+	font-size: 1.25rem;
+	line-height: 1;
+}
+
+.ProcessKern .KernDashboardSummary small {
+	color: var(--pw-muted-color);
+	font-size: .68rem;
+	overflow-wrap: anywhere;
+}
+
+.ProcessKern .KernDashboardClearState {
+	align-items: center;
+	background: var(--pw-main-background);
+	border: 1px solid var(--pw-border-color);
+	display: flex;
+	gap: .75rem;
+	margin: 1rem 0;
+	padding: .75rem 1rem;
+}
+
+.ProcessKern .KernDashboardClearIcon {
+	align-items: center;
+	background: var(--pw-button-muted-background);
+	border-radius: 50%;
+	box-sizing: border-box;
+	display: inline-flex;
+	flex: 0 0 2rem;
+	height: 2rem;
+	justify-content: center;
+}
+
+.ProcessKern .KernDashboardClearState > div {
+	display: grid;
+	gap: .1rem;
+	min-width: 0;
+}
+
+.ProcessKern .KernDashboardClearState small,
+.ProcessKern .KernDashboardClearMeta {
+	color: var(--pw-muted-color);
+}
+
+.ProcessKern .KernDashboardClearMeta {
+	font-size: .75rem;
+	margin-left: auto;
+	white-space: nowrap;
+}
+
+.ProcessKern .KernDashboardAccessList {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.ProcessKern .KernDashboardAccessList li + li {
+	border-top: 1px solid var(--pw-border-color);
+}
+
+.ProcessKern .KernDashboardAccessList a {
+	align-items: center;
+	color: var(--pw-text-color);
+	display: grid;
+	gap: .65rem;
+	grid-template-columns: minmax(0, 1fr) auto auto;
+	padding: .85rem 0;
+	text-decoration: none;
+}
+
+.ProcessKern .KernDashboardAccessList a:hover,
+.ProcessKern .KernDashboardAccessList a:focus {
+	color: var(--pw-main-color);
+	text-decoration: none;
+}
+
+.ProcessKern .KernDashboardAccessList a > span:first-child {
+	display: grid;
+	gap: .15rem;
+	min-width: 0;
+}
+
+.ProcessKern .KernDashboardAccessList small {
+	color: var(--pw-muted-color);
+}
+
+.ProcessKern .KernDashboardAccessValue {
+	font-size: 1.25rem;
+	font-weight: 600;
+}
+
+.ProcessKern .KernStatIcon {
+	color: var(--pw-muted-color);
+	position: absolute;
+	right: 1rem;
+	top: 1rem;
+}
+
+.ProcessKern .KernDashboardPanel {
+	display: flex;
+	flex-direction: column;
+}
+
+.ProcessKern .KernQueueList {
+	margin: 0;
+}
+
+.ProcessKern .KernQueueItem {
+	align-items: flex-start;
+}
+
+.ProcessKern .KernQueueItem .uk-label {
+	flex: 0 0 auto;
+}
+
+.ProcessKern .KernQueueItem > div:first-child {
+	display: grid;
+	gap: .25rem;
+}
+
+.ProcessKern .KernQueueType {
+	background: var(--pw-button-muted-background);
+	color: var(--pw-button-muted-color);
+	font-size: .6rem;
+	justify-self: start;
+	text-transform: none;
+}
+
+.ProcessKern .KernQueueDecision {
+	align-items: flex-end;
+	display: flex;
+	flex: 0 0 auto;
+	flex-direction: column;
+	gap: .5rem;
+}
+
+.ProcessKern .KernDashboardLinks {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.25rem;
+}
+
+.ProcessKern .KernDashboardActivity {
+	margin: 0;
+}
+
+.ProcessKern .KernDashboardPanel .KernCardHead .uk-badge {
+	align-self: flex-start;
+	flex: 0 0 auto;
+}
+
+.ProcessKern .KernDashboardActivity .KernHistoryEvent code {
+	display: none;
+}
+
+.ProcessKern .KernDashboardActivityItem {
+	align-items: flex-start;
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: minmax(12rem, 1fr) minmax(10rem, .9fr);
+}
+
+.ProcessKern .KernDashboardActivityContext {
+	display: grid;
+	gap: .2rem;
+	min-width: 0;
+}
+
+.ProcessKern .KernDashboardActivityContext > * {
+	display: block;
+}
+
+.ProcessKern .KernEmptyState {
+	box-sizing: border-box;
+	color: var(--pw-muted-color);
+	padding: 2rem 1rem;
+	text-align: center;
+}
+
+.ProcessKern .KernEmptyIcon {
+	color: var(--pw-main-color);
+}
+
+.ProcessKern .KernTablePanel {
+	background: var(--pw-main-background);
+	border: 1px solid var(--pw-border-color);
+}
+
+.ProcessKern .KernFilters {
+	align-items: center;
+	margin-block: 1rem;
+}
+
+.ProcessKern .KernFilters a {
+	align-items: center;
+	display: inline-flex;
+	font-weight: 400;
+	gap: .4rem;
+	min-height: 2rem;
+	text-decoration: none !important;
+	text-transform: none;
+}
+
+.ProcessKern .KernFilterCount {
+	align-items: center;
+	background: var(--pw-button-muted-background);
+	border: 1px solid var(--pw-button-muted-border);
+	border-radius: 50%;
+	box-sizing: border-box;
+	color: var(--pw-button-muted-color);
+	display: inline-flex;
+	flex: 0 0 1.75rem;
+	font-size: .7rem;
+	font-weight: 600;
+	height: 1.75rem;
+	justify-content: center;
+	line-height: 1;
+	padding: 0;
+	width: 1.75rem;
+}
+
+.ProcessKern .KernFilters > .uk-active > a {
+	color: var(--pw-main-color);
+}
+
+.ProcessKern .KernFilters > .uk-active > a .KernFilterCount {
+	background: var(--pw-main-color);
+	border-color: var(--pw-main-color);
+	color: #fff;
+}
+
+.ProcessKern .KernStatus {
+	font-size: .7rem;
+	white-space: nowrap;
+}
+
+.ProcessKern .KernFieldList {
+	display: flex;
+	flex-wrap: wrap;
+	gap: .35rem;
+}
+
+.ProcessKern .KernFieldLabel {
+	background: var(--pw-button-muted-background);
+	border: 1px solid var(--pw-button-muted-border);
+	color: var(--pw-button-muted-color);
+	font-size: .65rem;
+	text-transform: none;
+}
+
+.ProcessKern .KernRevisionCards {
+	display: none;
+}
+
+.ProcessKern .KernClaimsIntro,
+.ProcessKern .KernRevisionsIntro,
+.ProcessKern .KernCodesIntro,
+.ProcessKern .KernHistoryIntro,
+.ProcessKern .KernAccessIntro {
+	align-items: end;
+	border-bottom: 1px solid var(--pw-border-color);
+	display: grid;
+	gap: 1.5rem;
+	grid-template-columns: minmax(0, 1fr) auto;
+	margin-bottom: 1.25rem;
+	padding-bottom: 1.25rem;
+}
+
+.ProcessKern .KernClaimsIntro > div:first-child,
+.ProcessKern .KernRevisionsIntro > div:first-child,
+.ProcessKern .KernCodesIntro > div:first-child,
+.ProcessKern .KernHistoryIntro > div:first-child,
+.ProcessKern .KernAccessIntro > div:first-child {
+	max-width: 52rem;
+}
+
+.ProcessKern .KernAccessIntroAside {
+	align-items: center;
+	display: flex;
+	gap: .75rem;
+	justify-content: flex-end;
+}
+
+.ProcessKern .KernAccessEditIntro {
+	align-items: end;
+	border-bottom: 1px solid var(--pw-border-color);
+	display: flex;
+	gap: 1.5rem;
+	justify-content: space-between;
+	margin-bottom: 1.25rem;
+	padding-bottom: 1.25rem;
+}
+
+.ProcessKern .KernAccessEditIntro > div:first-child {
+	max-width: 52rem;
+}
+
+.ProcessKern .KernAccessRuleSummary {
+	background: var(--pw-main-background);
+	border: 1px solid var(--pw-border-color);
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	margin-bottom: 1rem;
+}
+
+.ProcessKern .KernAccessRuleSummary > div {
+	box-sizing: border-box;
+	display: grid;
+	gap: .25rem;
+	min-width: 0;
+	padding: .85rem 1rem;
+}
+
+.ProcessKern .KernAccessRuleSummary > div + div {
+	border-left: 1px solid var(--pw-border-color);
+}
+
+.ProcessKern .KernAccessRuleSummary span,
+.ProcessKern .KernAccessRuleSummary small {
+	color: var(--pw-muted-color);
+}
+
+.ProcessKern .KernAccessRuleSummary strong,
+.ProcessKern .KernAccessRuleSummary small {
+	overflow-wrap: anywhere;
+}
+
+.ProcessKern .KernAccessRuleSummary strong {
+	font-size: 1rem;
+	line-height: 1.25;
+}
+
+.ProcessKern .KernAccessRuleBreadth,
+.ProcessKern .KernAccessRuleGuidance {
+	align-items: flex-start;
+	display: flex;
+	gap: .75rem;
+	margin: 0;
+}
+
+.ProcessKern .KernAccessRuleNotices {
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+}
+
+.ProcessKern .KernAccessRuleBreadth > span,
+.ProcessKern .KernAccessRuleGuidance > span {
+	flex: 0 0 auto;
+	margin-top: .1rem;
+}
+
+.ProcessKern .KernAccessRuleBreadth p,
+.ProcessKern .KernAccessRuleGuidance p {
+	margin: .25rem 0 0;
+}
+
+.ProcessKern .KernAccessRuleBuilder {
+	margin-top: 2rem;
+}
+
+.ProcessKern .KernAccessRuleForm #wrap_Inputfield_submit_save_rule {
+	background: var(--pw-main-background);
+	border-top: 1px solid var(--pw-border-color);
+	padding-top: 1rem;
+}
+
+.ProcessKern .KernClaimQueueState,
+.ProcessKern .KernRevisionQueueState,
+.ProcessKern .KernCodeQueueState,
+.ProcessKern .KernHistoryQueueState,
+.ProcessKern .KernAccessQueueState {
+	align-items: center;
+	background: var(--pw-main-background);
+	border: 1px solid var(--pw-border-color);
+	box-sizing: border-box;
+	color: var(--pw-text-color);
+	display: flex;
+	gap: .75rem;
+	min-width: 15rem;
+	padding: .75rem 1rem;
+	text-decoration: none !important;
+}
+
+.ProcessKern .KernClaimQueueState:hover,
+.ProcessKern .KernClaimQueueState:focus,
+.ProcessKern .KernRevisionQueueState:hover,
+.ProcessKern .KernRevisionQueueState:focus,
+.ProcessKern .KernCodeQueueState:hover,
+.ProcessKern .KernCodeQueueState:focus {
+	border-color: var(--pw-button-muted-color);
+	color: var(--pw-text-color);
+}
+
+.ProcessKern .KernClaimQueueState strong,
+.ProcessKern .KernClaimQueueState small,
+.ProcessKern .KernRevisionQueueState strong,
+.ProcessKern .KernRevisionQueueState small,
+.ProcessKern .KernCodeQueueState strong,
+.ProcessKern .KernCodeQueueState small,
+.ProcessKern .KernHistoryQueueState strong,
+.ProcessKern .KernHistoryQueueState small,
+.ProcessKern .KernAccessQueueState strong,
+.ProcessKern .KernAccessQueueState small {
+	display: block;
+}
+
+.ProcessKern .KernClaimQueueState small,
+.ProcessKern .KernRevisionQueueState small,
+.ProcessKern .KernCodeQueueState small,
+.ProcessKern .KernHistoryQueueState small,
+.ProcessKern .KernAccessQueueState small {
+	color: var(--pw-muted-color);
+	margin-top: .15rem;
+}
+
+.ProcessKern .KernClaimQueueDot,
+.ProcessKern .KernRevisionQueueDot,
+.ProcessKern .KernCodeQueueDot,
+.ProcessKern .KernHistoryQueueDot,
+.ProcessKern .KernAccessQueueDot {
+	background: var(--pw-alert-success);
+	border-radius: 50%;
+	box-shadow: 0 0 0 .25rem color-mix(in srgb, var(--pw-alert-success) 16%, transparent);
+	flex: 0 0 .65rem;
+	height: .65rem;
+	width: .65rem;
+}
+
+.ProcessKern .KernClaimQueueState[data-state="attention"] .KernClaimQueueDot,
+.ProcessKern .KernRevisionQueueState[data-state="attention"] .KernRevisionQueueDot,
+.ProcessKern .KernAccessQueueState[data-state="attention"] .KernAccessQueueDot {
+	background: var(--pw-alert-warning);
+	box-shadow: 0 0 0 .25rem color-mix(in srgb, var(--pw-alert-warning) 16%, transparent);
+}
+
+.ProcessKern .KernCodeQueueState[data-state="idle"] .KernCodeQueueDot {
+	background: var(--pw-muted-color);
+	box-shadow: 0 0 0 .25rem color-mix(in srgb, var(--pw-muted-color) 16%, transparent);
+}
+
+.ProcessKern .KernHistoryQueueState[data-state="idle"] .KernHistoryQueueDot {
+	background: var(--pw-muted-color);
+	box-shadow: 0 0 0 .25rem color-mix(in srgb, var(--pw-muted-color) 16%, transparent);
+}
+
+.ProcessKern .KernClaimSummary,
+.ProcessKern .KernRevisionSummary,
+.ProcessKern .KernCodeSummary,
+.ProcessKern .KernHistorySummary,
+.ProcessKern .KernAccessSummary {
+	background: var(--pw-main-background);
+	border: 1px solid var(--pw-border-color);
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	margin-bottom: 2rem;
+}
+
+.ProcessKern .KernClaimSummary a,
+.ProcessKern .KernRevisionSummary a,
+.ProcessKern .KernCodeSummary a,
+.ProcessKern .KernHistorySummary > div,
+.ProcessKern .KernAccessSummary > div {
+	box-sizing: border-box;
+	color: var(--pw-text-color);
+	display: grid;
+	gap: .2rem;
+	min-width: 0;
+	padding: .85rem 1rem;
+	text-decoration: none !important;
+}
+
+.ProcessKern .KernClaimSummary a + a,
+.ProcessKern .KernRevisionSummary a + a,
+.ProcessKern .KernCodeSummary a + a,
+.ProcessKern .KernHistorySummary > div + div,
+.ProcessKern .KernAccessSummary > div + div {
+	border-left: 1px solid var(--pw-border-color);
+}
+
+.ProcessKern .KernClaimSummary a:hover,
+.ProcessKern .KernClaimSummary a:focus,
+.ProcessKern .KernRevisionSummary a:hover,
+.ProcessKern .KernRevisionSummary a:focus,
+.ProcessKern .KernCodeSummary a:hover,
+.ProcessKern .KernCodeSummary a:focus {
+	background: var(--pw-button-muted-background);
+	color: var(--pw-text-color);
+}
+
+.ProcessKern .KernClaimSummary span,
+.ProcessKern .KernClaimSummary small,
+.ProcessKern .KernRevisionSummary span,
+.ProcessKern .KernRevisionSummary small,
+.ProcessKern .KernCodeSummary span,
+.ProcessKern .KernCodeSummary small,
+.ProcessKern .KernHistorySummary span,
+.ProcessKern .KernHistorySummary small,
+.ProcessKern .KernAccessSummary span,
+.ProcessKern .KernAccessSummary small {
+	color: var(--pw-muted-color);
+}
+
+.ProcessKern .KernClaimSummary strong,
+.ProcessKern .KernRevisionSummary strong,
+.ProcessKern .KernCodeSummary strong,
+.ProcessKern .KernHistorySummary strong,
+.ProcessKern .KernAccessSummary strong {
+	font-size: 1.55rem;
+	line-height: 1.1;
+}
+
+.ProcessKern .KernClaimSummary small,
+.ProcessKern .KernRevisionSummary small,
+.ProcessKern .KernCodeSummary small,
+.ProcessKern .KernHistorySummary small,
+.ProcessKern .KernAccessSummary small {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.ProcessKern .KernClaimSearch,
+.ProcessKern .KernRevisionSearch,
+.ProcessKern .KernCodeSearch,
+.ProcessKern .KernHistorySearch,
+.ProcessKern .KernAccessSearch {
+	background: var(--pw-main-background);
+	border: 1px solid var(--pw-border-color);
+	box-sizing: border-box;
+	margin: 1rem 0;
+	padding: 1rem;
+}
+
+.ProcessKern .KernClaimSearch .uk-form-label,
+.ProcessKern .KernRevisionSearch .uk-form-label,
+.ProcessKern .KernCodeSearch .uk-form-label,
+.ProcessKern .KernHistorySearch .uk-form-label,
+.ProcessKern .KernAccessSearch .uk-form-label {
+	display: block;
+	font-weight: 600;
+	margin-bottom: .5rem;
+}
+
+.ProcessKern .KernClaimSearch > div,
+.ProcessKern .KernRevisionSearch > div,
+.ProcessKern .KernCodeSearch > div,
+.ProcessKern .KernHistorySearch > div,
+.ProcessKern .KernAccessSearch > div {
+	display: grid;
+	gap: .5rem;
+	grid-template-columns: minmax(12rem, 1fr) auto auto;
+}
+
+.ProcessKern .KernClaimTable table {
+	margin: 0;
+}
+
+.ProcessKern .KernClaimTable td:first-child {
+	min-width: 13rem;
+}
+
+.ProcessKern .KernClaimId {
+	display: block;
+	margin-top: .25rem;
+}
+
+.ProcessKern .KernClaimSource {
+	align-items: center;
+	display: inline-flex;
+	gap: .2rem;
+	white-space: nowrap;
+}
+
+.ProcessKern .KernClaimCards {
+	display: none;
+}
+
+.ProcessKern .KernClaimCard + .KernClaimCard {
+	margin-top: 1rem;
+}
+
+.ProcessKern .KernClaimCardHead {
+	align-items: flex-start;
+	display: flex;
+	gap: 1rem;
+	justify-content: space-between;
+}
+
+.ProcessKern .KernClaimCard .uk-card-title {
+	font-size: 1.1rem;
+}
+
+.ProcessKern .KernClaimCard .uk-card-title a {
+	display: inline-block;
+}
+
+.ProcessKern .KernClaimMeta {
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	margin: 0;
+}
+
+.ProcessKern .KernClaimMeta dt {
+	color: var(--pw-muted-color);
+	font-size: .7rem;
+	font-weight: 600;
+	letter-spacing: .04em;
+	text-transform: uppercase;
+}
+
+.ProcessKern .KernClaimMeta dd {
+	margin: .25rem 0 0;
+	overflow-wrap: anywhere;
+}
+
+.ProcessKern .KernPolicyNotice {
+	align-items: flex-start;
+	display: flex;
+	gap: .75rem;
+	margin-bottom: 1rem;
+}
+
+.ProcessKern .KernPolicyNotice > span {
+	flex: 0 0 auto;
+	margin-top: .1rem;
+}
+
+.ProcessKern .KernPolicyNotice p {
+	margin: .25rem 0 0;
+}
+
+.ProcessKern .KernAccessTable table {
+	margin: 0;
+}
+
+.ProcessKern .KernAccessScope {
+	display: grid;
+	gap: .2rem;
+}
+
+.ProcessKern .KernPermissionList {
+	display: flex;
+	flex-wrap: wrap;
+	gap: .3rem;
+}
+
+.ProcessKern .KernPermissionAllow,
+.ProcessKern .KernPermissionDeny {
+	font-size: .62rem;
+	text-transform: none;
+}
+
+.ProcessKern .KernPermissionAllow {
+	background: var(--pw-button-muted-background);
+	color: var(--pw-button-muted-color);
+}
+
+.ProcessKern .KernAccessActions,
+.ProcessKern .KernAccessCardActions {
+	align-items: flex-start;
+	display: flex;
+	gap: .5rem;
+	justify-content: flex-end;
+}
+
+.ProcessKern .KernDeleteControl {
+	display: inline-block;
+	position: relative;
+	text-align: left;
+}
+
+.ProcessKern .KernDeleteControl > summary {
+	list-style: none;
+}
+
+.ProcessKern .KernDeleteControl > summary::-webkit-details-marker {
+	display: none;
+}
+
+.ProcessKern .KernDeleteConfirm {
+	background: var(--pw-notes-background);
+	border: 1px solid var(--pw-border-color);
+	border-radius: var(--pw-input-radius);
+	box-sizing: border-box;
+	margin-top: .5rem;
+	min-width: 16rem;
+	padding: .75rem;
+	position: absolute;
+	right: 0;
+	z-index: 20;
+}
+
+.ProcessKern .KernDeleteConfirm p {
+	font-size: .8rem;
+	margin: 0 0 .65rem;
+}
+
+.ProcessKern .KernDeleteControl.is-full,
+.ProcessKern .KernDeleteControl.is-full > summary {
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.ProcessKern .KernDeleteControl.is-full .KernDeleteConfirm {
+	position: static;
+	width: 100%;
+}
+
+.ProcessKern .KernAccessCards {
+	display: none;
+}
+
+.ProcessKern .KernAccessCard + .KernAccessCard {
+	margin-top: 1rem;
+}
+
+.ProcessKern .KernAccessCardHead {
+	align-items: flex-start;
+	display: flex;
+	gap: 1rem;
+	justify-content: space-between;
+}
+
+.ProcessKern .KernAccessCard .uk-card-title {
+	font-size: 1.1rem;
+}
+
+.ProcessKern .KernAccessMeta {
+	display: grid;
+	gap: 1rem;
+	margin: 0;
+}
+
+.ProcessKern .KernAccessMeta dt {
+	color: var(--pw-muted-color);
+	font-size: .7rem;
+	font-weight: 600;
+	letter-spacing: .04em;
+	text-transform: uppercase;
+}
+
+.ProcessKern .KernAccessMeta dd {
+	margin: .25rem 0 0;
+	overflow-wrap: anywhere;
+}
+
+.ProcessKern .KernRevisionCard + .KernRevisionCard {
+	margin-top: 1rem;
+}
+
+.ProcessKern .KernRevisionCardHead {
+	align-items: flex-start;
+	display: flex;
+	gap: 1rem;
+	justify-content: space-between;
+}
+
+.ProcessKern .KernRevisionCard .uk-card-title {
+	font-size: 1.1rem;
+}
+
+.ProcessKern .KernRevisionMeta {
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	margin: 0 0 1rem;
+}
+
+.ProcessKern .KernRevisionMeta dt {
+	color: var(--pw-muted-color);
+	font-size: .7rem;
+	font-weight: 600;
+	letter-spacing: .04em;
+	text-transform: uppercase;
+}
+
+.ProcessKern .KernRevisionMeta dd {
+	margin: .2rem 0 0;
+}
+
+.ProcessKern .KernRevisionChanges > .uk-text-meta {
+	display: block;
+	margin-bottom: .45rem;
+}
+
+.ProcessKern .KernRevisionDetailIntro,
+.ProcessKern .KernClaimDetailIntro,
+.ProcessKern .KernSectionHead {
+	align-items: flex-start;
+	display: flex;
+	gap: 1rem;
+	justify-content: space-between;
+}
+
+.ProcessKern .KernRevisionDetailIntro,
+.ProcessKern .KernClaimDetailIntro {
+	align-items: end;
+	border-bottom: 1px solid var(--pw-border-color);
+	margin-bottom: 1.25rem;
+	padding-bottom: 1.25rem;
+}
+
+.ProcessKern .KernRevisionDetailIntro > div:first-child,
+.ProcessKern .KernClaimDetailIntro > div:first-child {
+	max-width: 52rem;
+}
+
+.ProcessKern .KernRevisionDetailIntro h2,
+.ProcessKern .KernClaimDetailIntro h2 {
+	font-size: 1.5rem;
+}
+
+.ProcessKern .KernRevisionDetailActions,
+.ProcessKern .KernRevisionState,
+.ProcessKern .KernClaimDetailActions,
+.ProcessKern .KernClaimState {
+	align-items: center;
+	display: flex;
+	gap: .75rem;
+}
+
+.ProcessKern .KernRevisionDetailActions,
+.ProcessKern .KernClaimDetailActions {
+	flex: 0 0 auto;
+}
+
+.ProcessKern .KernRevisionState,
+.ProcessKern .KernClaimState {
+	border-right: 1px solid var(--pw-border-color);
+	padding-right: .75rem;
+}
+
+.ProcessKern .KernRevisionState > span:last-child,
+.ProcessKern .KernClaimState > span:last-child {
+	color: var(--pw-muted-color);
+	font-size: .8rem;
+}
+
+.ProcessKern .KernRevisionDetailSummary,
+.ProcessKern .KernClaimDetailSummary {
+	background: var(--pw-main-background);
+	border: 1px solid var(--pw-border-color);
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	margin: 0 0 1rem;
+}
+
+.ProcessKern .KernRevisionDetailSummary > div,
+.ProcessKern .KernClaimDetailSummary > div {
+	box-sizing: border-box;
+	display: grid;
+	gap: .3rem;
+	min-width: 0;
+	padding: .85rem 1rem;
+}
+
+.ProcessKern .KernRevisionDetailSummary > div + div,
+.ProcessKern .KernClaimDetailSummary > div + div {
+	border-left: 1px solid var(--pw-border-color);
+}
+
+.ProcessKern .KernRevisionDetailSummary dt,
+.ProcessKern .KernClaimDetailSummary dt,
+.ProcessKern .KernCompareLabel {
+	color: var(--pw-muted-color);
+	font-size: .7rem;
+	font-weight: 600;
+	letter-spacing: .04em;
+	text-transform: uppercase;
+}
+
+.ProcessKern .KernRevisionDetailSummary dd,
+.ProcessKern .KernClaimDetailSummary dd {
+	margin: 0;
+	overflow-wrap: anywhere;
+}
+
+.ProcessKern .KernRevisionContext {
+	display: grid;
+	gap: .75rem;
+	margin-bottom: 1.25rem;
+}
+
+.ProcessKern .KernClaimContext {
+	display: grid;
+	gap: .75rem;
+	grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+	margin-bottom: 1.25rem;
+}
+
+.ProcessKern .KernClaimContext > div {
+	background: var(--pw-notes-background);
+	border-left: 3px solid var(--pw-border-color);
+	padding: .85rem 1rem;
+}
+
+.ProcessKern .KernClaimContext p {
+	margin: .35rem 0 0;
+}
+
+.ProcessKern .KernRevisionNote {
+	background: var(--pw-notes-background);
+	border-left: 3px solid var(--pw-border-color);
+	padding: .85rem 1rem;
+}
+
+.ProcessKern .KernRevisionNote p {
+	margin: .35rem 0 0;
+}
+
+.ProcessKern .KernConflictNotice {
+	margin: 0;
+}
+
+.ProcessKern .KernConflictNotice .uk-h4 {
+	margin-bottom: .35rem;
+}
+
+.ProcessKern .KernReviewLayout {
+	align-items: flex-start;
+}
+
+.ProcessKern .KernClaimDetailLayout {
+	align-items: flex-start;
+}
+
+.ProcessKern .KernClaimActivity .KernSectionHead {
+	margin-bottom: 0;
+}
+
+.ProcessKern .KernClaimDetailAside > *,
+.ProcessKern .KernClaimDecisionForm,
+.ProcessKern .KernClaimDecisionCard {
+	position: sticky;
+	top: 1rem;
+}
+
+.ProcessKern .KernClaimDecisionForm label,
+.ProcessKern .KernClaimRevokeConfirm label {
+	display: grid;
+	font-weight: 600;
+	gap: .35rem;
+}
+
+.ProcessKern .KernClaimDecisionForm label small,
+.ProcessKern .KernClaimRevokeConfirm label small {
+	color: var(--pw-muted-color);
+	font-weight: 400;
+}
+
+.ProcessKern .KernClaimDecisionActions {
+	display: grid;
+	gap: .5rem;
+	margin-top: 1rem;
+}
+
+.ProcessKern .KernClaimDecisionState {
+	align-items: flex-start;
+	display: flex;
+	gap: .75rem;
+	margin-top: .75rem;
+}
+
+.ProcessKern .KernClaimDecisionIcon {
+	align-items: center;
+	background: var(--pw-button-muted-background);
+	border-radius: 50%;
+	box-sizing: border-box;
+	display: inline-flex;
+	flex: 0 0 2.25rem;
+	height: 2.25rem;
+	justify-content: center;
+}
+
+.ProcessKern .KernClaimRevoke > summary {
+	box-sizing: border-box;
+	list-style: none;
+}
+
+.ProcessKern .KernClaimRevoke > summary::-webkit-details-marker {
+	display: none;
+}
+
+.ProcessKern .KernClaimRevokeConfirm {
+	background: var(--pw-notes-background);
+	border: 1px solid var(--pw-border-color);
+	display: grid;
+	gap: .75rem;
+	margin-top: .75rem;
+	padding: .85rem;
+}
+
+.ProcessKern .KernClaimRevokeConfirm p {
+	margin: 0;
+}
+
+.ProcessKern .KernSectionHead {
+	margin-bottom: 1rem;
+}
+
+.ProcessKern .KernSectionCount {
+	color: var(--pw-muted-color);
+	flex: 0 0 auto;
+	font-size: .8rem;
+	padding-top: .2rem;
+}
+
+.ProcessKern .KernChange {
+	margin-bottom: 1rem;
+}
+
+.ProcessKern .KernChange > summary {
+	align-items: center;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+}
+
+.ProcessKern .KernChange > summary::-webkit-details-marker {
+	display: none;
+}
+
+.ProcessKern .KernChangeTitle {
+	align-items: center;
+	display: flex;
+	gap: .75rem;
+	min-width: 0;
+}
+
+.ProcessKern .KernChangeTitle > span:last-child {
+	display: grid;
+	gap: .1rem;
+	min-width: 0;
+}
+
+.ProcessKern .KernChangeNumber {
+	align-items: center;
+	background: var(--pw-button-muted-background);
+	border-radius: 50%;
+	color: var(--pw-muted-color);
+	display: inline-flex;
+	flex: 0 0 1.75rem;
+	font-size: .75rem;
+	height: 1.75rem;
+	justify-content: center;
+}
+
+.ProcessKern .KernChangeTitle code {
+	color: var(--pw-muted-color);
+	font-size: .75rem;
+	font-weight: 400;
+}
+
+.ProcessKern .KernChangeToggle {
+	border-bottom: 1px solid currentColor;
+	border-right: 1px solid currentColor;
+	color: var(--pw-muted-color);
+	display: block;
+	flex: 0 0 auto;
+	height: .45rem;
+	transform: rotate(45deg);
+	transition: transform .15s ease;
+	width: .45rem;
+}
+
+.ProcessKern .KernChange[open] .KernChangeToggle {
+	transform: rotate(225deg);
+}
+
+.ProcessKern .KernCompare {
+	margin-bottom: 0;
+}
+
+.ProcessKern .KernComparePane {
+	border: 1px solid var(--pw-border-color);
+	border-radius: var(--pw-input-radius);
+	box-sizing: border-box;
+	min-width: 0;
+	padding: 1rem;
+}
+
+.ProcessKern .KernCompareProposed {
+	background: var(--pw-notes-background);
+	border-color: var(--pw-button-muted-border);
+}
+
+.ProcessKern .KernCompareValue {
+	font-size: 1.05rem;
+	font-weight: 600;
+	line-height: 1.55;
+	margin-top: .5rem;
+	overflow-wrap: anywhere;
+}
+
+.ProcessKern .KernCompareValue.is-empty {
+	color: var(--pw-muted-color);
+	font-style: italic;
+	font-weight: 400;
+}
+
+.ProcessKern .KernCompareSummary {
+	color: var(--pw-muted-color);
+	font-weight: 500;
+}
+
+.ProcessKern .KernReferenceList {
+	display: grid;
+	gap: .65rem;
+	list-style: none;
+	margin: .75rem 0 0;
+	padding: 0;
+}
+
+.ProcessKern .KernReferenceList li {
+	display: grid;
+	gap: .15rem;
+}
+
+.ProcessKern .KernReferenceList li > span {
+	color: var(--pw-muted-color);
+	font-size: .75rem;
+	overflow-wrap: anywhere;
+}
+
+.ProcessKern .KernStructuredRows {
+	display: grid;
+	gap: .65rem;
+	margin-top: .75rem;
+}
+
+.ProcessKern .KernStructuredRow {
+	background: var(--pw-main-background);
+	border: 1px solid var(--pw-border-color);
+	border-radius: var(--pw-input-radius);
+	padding: .75rem;
+}
+
+.ProcessKern .KernCompareProposed .KernStructuredRow {
+	background: var(--pw-main-background);
+}
+
+.ProcessKern .KernStructuredRowTitle {
+	display: block;
+	font-size: .75rem;
+	margin-bottom: .55rem;
+}
+
+.ProcessKern .KernStructuredRow dl {
+	display: grid;
+	gap: .5rem;
+	margin: 0;
+}
+
+.ProcessKern .KernStructuredRow dl > div {
+	display: grid;
+	gap: .15rem;
+	grid-template-columns: minmax(5rem, .35fr) minmax(0, 1fr);
+}
+
+.ProcessKern .KernStructuredRow dt {
+	color: var(--pw-muted-color);
+	font-size: .7rem;
+	font-weight: 600;
+	letter-spacing: .04em;
+	text-transform: uppercase;
+}
+
+.ProcessKern .KernStructuredRow dd {
+	min-width: 0;
+	margin: 0;
+	overflow-wrap: anywhere;
+}
+
+.ProcessKern .KernStructuredRow a {
+	max-width: 100%;
+	overflow-wrap: anywhere;
+	word-break: break-word;
+}
+
+.ProcessKern .KernRawValue {
+	border-top: 1px solid var(--pw-border-color);
+	margin-top: 1rem;
+	padding-top: .75rem;
+}
+
+.ProcessKern .KernRawValue > summary {
+	color: var(--pw-muted-color);
+	cursor: pointer;
+	font-size: .75rem;
+}
+
+.ProcessKern .KernRawValue pre {
+	margin-bottom: 0;
+}
+
+.ProcessKern .KernHistoryCard {
+	margin-top: 1.5rem;
+}
+
+.ProcessKern .KernRevisionHistorySummary {
+	align-items: center;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+}
+
+.ProcessKern .KernRevisionHistorySummary::-webkit-details-marker {
+	display: none;
+}
+
+.ProcessKern .KernRevisionHistorySummary > span:first-child {
+	display: grid;
+	gap: .2rem;
+}
+
+.ProcessKern .KernRevisionHistorySummary small {
+	color: var(--pw-muted-color);
+	font-weight: 400;
+}
+
+.ProcessKern .KernDecisionState {
+	align-items: flex-start;
+	display: flex;
+	gap: .75rem;
+	margin-top: .75rem;
+}
+
+.ProcessKern .KernDecisionStateIcon {
+	align-items: center;
+	background: var(--pw-button-muted-background);
+	border-radius: 50%;
+	box-sizing: border-box;
+	display: inline-flex;
+	flex: 0 0 2.25rem;
+	height: 2.25rem;
+	justify-content: center;
+}
+
+.ProcessKern .KernHistoryLimit {
+	flex: 0 0 auto;
+}
+
+.ProcessKern .KernHistoryStat .KernStatValue {
+	font-size: clamp(1.25rem, 2vw, 2rem);
+	line-height: 1.2;
+}
+
+.ProcessKern .KernHistoryStat .KernStatValue time {
+	font-size: .9rem;
+	font-weight: 600;
+}
+
+.ProcessKern .KernHistoryTable {
+	overflow-x: auto;
+}
+
+.ProcessKern .KernHistoryTable table {
+	margin: 0;
+}
+
+.ProcessKern .KernHistoryTable th:first-child,
+.ProcessKern .KernHistoryTable td:first-child {
+	white-space: nowrap;
+	width: 1%;
+}
+
+.ProcessKern .KernHistoryTable th:nth-child(2) {
+	width: 18rem;
+}
+
+.ProcessKern .KernHistoryTable th:nth-child(3) {
+	width: 15rem;
+}
+
+.ProcessKern .KernHistoryEvent {
+	align-items: flex-start;
+	display: flex;
+	gap: .65rem;
+}
+
+.ProcessKern .KernHistoryEventIcon {
+	color: var(--pw-main-color);
+	flex: 0 0 auto;
+	margin-top: .1rem;
+}
+
+.ProcessKern .KernHistoryEvent strong,
+.ProcessKern .KernHistoryEvent code,
+.ProcessKern .KernHistoryContext > * {
+	display: block;
+}
+
+.ProcessKern .KernHistoryEvent code {
+	color: var(--pw-muted-color);
+	font-size: .7rem;
+	margin-top: .2rem;
+}
+
+.ProcessKern .KernHistoryContext {
+	display: grid;
+	gap: .25rem;
+}
+
+.ProcessKern .KernHistoryMessage {
+	margin: 0 0 .75rem;
+}
+
+.ProcessKern .KernHistoryMeta {
+	display: flex;
+	flex-wrap: wrap;
+	gap: .65rem 1.25rem;
+	margin: 0;
+}
+
+.ProcessKern .KernHistoryMeta > div {
+	min-width: 5rem;
+}
+
+.ProcessKern .KernHistoryMeta dt {
+	color: var(--pw-muted-color);
+	font-size: .65rem;
+	font-weight: 600;
+	letter-spacing: .04em;
+	text-transform: uppercase;
+}
+
+.ProcessKern .KernHistoryMeta dd {
+	margin: .15rem 0 0;
+	overflow-wrap: anywhere;
+}
+
+.ProcessKern .KernEventTechnical {
+	border-top: 1px solid var(--pw-border-color);
+	margin-top: .75rem;
+	padding-top: .65rem;
+}
+
+.ProcessKern .KernEventTechnical > summary {
+	color: var(--pw-muted-color);
+	cursor: pointer;
+	font-size: .75rem;
+}
+
+.ProcessKern .KernEventTechnical pre {
+	background: var(--pw-code-background);
+	border-radius: var(--pw-input-radius);
+	color: var(--pw-code-color);
+	max-height: 20rem;
+	overflow: auto;
+	padding: .75rem;
+	white-space: pre-wrap;
+}
+
+.ProcessKern .KernHistoryCards {
+	display: none;
+}
+
+.ProcessKern .KernHistoryEventCard + .KernHistoryEventCard {
+	margin-top: 1rem;
+}
+
+.ProcessKern .KernHistoryEventHead {
+	align-items: flex-start;
+	display: flex;
+	justify-content: space-between;
+}
+
+.ProcessKern .KernHistoryCardDetails {
+	border-top: 1px solid var(--pw-border-color);
+	margin-top: .85rem;
+	padding-top: .75rem;
+}
+
+.ProcessKern .KernHistoryCardDetails > summary {
+	color: var(--pw-main-color);
+	cursor: pointer;
+	font-size: .8rem;
+	font-weight: 600;
+}
+
+.ProcessKern .KernHistoryCardDetails > div {
+	margin-top: .75rem;
+}
+
+.ProcessKern .KernReviewForm,
+.ProcessKern .KernDecisionCard {
+	position: sticky;
+	top: 1rem;
+}
+
+.ProcessKern .KernReviewForm label {
+	display: grid;
+	font-weight: 600;
+	gap: .35rem;
+}
+
+.ProcessKern .KernReviewForm label small {
+	color: var(--pw-muted-color);
+	font-weight: 400;
+}
+
+.ProcessKern .KernDecisionActions {
+	display: grid;
+	gap: .65rem;
+	margin-top: 1rem;
+}
+
+.ProcessKern .KernDecisionActions .uk-button {
+	width: 100%;
+}
+
+.ProcessKern .KernDecisionImpact {
+	margin: 0 0 1rem;
+}
+
+.ProcessKern .KernDecisionImpact p {
+	margin: .35rem 0 0;
+}
+
+.ProcessKern .KernDecisionSubmitterNote {
+	background: var(--pw-notes-background);
+	border-left: 3px solid var(--pw-button-muted-border);
+	margin-bottom: 1rem;
+	padding: .75rem;
+}
+
+.ProcessKern .KernDecisionSubmitterNote p {
+	margin: .35rem 0 0;
+}
+
+.ProcessKern .KernForceDecision {
+	border-top: 1px solid var(--pw-border-color);
+	margin-top: 1rem;
+	padding-top: 1rem;
+}
+
+.ProcessKern .KernForceDecision > summary {
+	color: var(--pw-muted-color);
+	cursor: pointer;
+	font-size: .8rem;
+}
+
+.ProcessKern .KernForceDecision .uk-alert-danger {
+	margin-bottom: 0;
+}
+
+.ProcessKern .KernCodeReveal {
+	align-items: center;
+	display: flex;
+	gap: 1.5rem;
+	justify-content: space-between;
+	margin-bottom: 1.5rem;
+}
+
+.ProcessKern .KernVisuallyHidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+.ProcessKern .KernCodeReveal code {
+	background: var(--pw-code-background);
+	border-radius: var(--pw-input-radius);
+	color: var(--pw-code-color);
+	flex: 0 0 auto;
+	font-size: 1.25rem;
+	padding: .75rem 1rem;
+}
+
+.ProcessKern .KernCodesLayout {
+	align-items: flex-start;
+}
+
+@media (min-width: 960px) {
+	.ProcessKern .KernCodeFormAside {
+		flex: 0 0 min(25rem, 40%);
+		width: min(25rem, 40%);
+	}
+}
+
+.ProcessKern .KernCodesMain,
+.ProcessKern .KernCodeFormAside,
+.ProcessKern .KernCodeFormCard .Inputfield {
+	min-width: 0;
+}
+
+.ProcessKern > .ui-autocomplete {
+	box-sizing: border-box;
+	max-width: calc(100vw - 4rem);
+	width: min(30rem, calc(100vw - 4rem)) !important;
+}
+
+.ProcessKern > .ui-autocomplete .ui-menu-item {
+	min-width: 0;
+}
+
+.ProcessKern > .ui-autocomplete .ui-menu-item > a {
+	box-sizing: border-box;
+	display: block;
+	line-height: 1.35;
+	max-width: 100%;
+	overflow-wrap: anywhere;
+	padding: .55rem .75rem;
+	white-space: normal;
+}
+
+.ProcessKern .KernCodeFormCard {
+	position: sticky;
+	top: 1rem;
+}
+
+.ProcessKern .KernCodeFormCard .InputfieldForm {
+	margin: 0;
+}
+
+.ProcessKern .KernCodeFormCard .Inputfields {
+	margin: 0;
+}
+
+.ProcessKern .KernCodeSafetyNotice {
+	margin: 0;
+	padding: .85rem;
+}
+
+.ProcessKern .KernCodeSafetyNotice p {
+	margin: .25rem 0 0;
+}
+
+.ProcessKern .KernCodeCreateForm .InputfieldSubmit [type="submit"] {
+	width: 100%;
+}
+
+.ProcessKern .KernCodeCards {
+	display: none;
+}
+
+.ProcessKern .KernCodeCard + .KernCodeCard {
+	margin-top: 1rem;
+}
+
+.ProcessKern .KernCodeCardHead {
+	align-items: flex-start;
+	display: flex;
+	gap: 1rem;
+	justify-content: space-between;
+}
+
+.ProcessKern .KernCodeCard .uk-card-title {
+	font-size: 1.1rem;
+}
+
+.ProcessKern .KernCodeMeta {
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	margin: 0;
+}
+
+.ProcessKern .KernCodeMeta dt {
+	color: var(--pw-muted-color);
+	font-size: .7rem;
+	font-weight: 600;
+	letter-spacing: .04em;
+	text-transform: uppercase;
+}
+
+.ProcessKern .KernCodeMeta dd {
+	margin: .25rem 0 0;
+}
+
+.ProcessKern .KernCodeUsage {
+	display: block;
+	min-width: 7rem;
+}
+
+.ProcessKern .KernCodeUsage .uk-progress {
+	height: .35rem;
+	margin: .35rem 0 0;
+}
+
+.ProcessKern .KernRevokeControl {
+	display: inline-block;
+	text-align: left;
+}
+
+.ProcessKern .KernRevokeControl > summary {
+	list-style: none;
+}
+
+.ProcessKern .KernRevokeControl > summary::-webkit-details-marker {
+	display: none;
+}
+
+.ProcessKern .KernRevokeControl.is-full,
+.ProcessKern .KernRevokeControl.is-full > summary {
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.ProcessKern .KernRevokeConfirm {
+	background: var(--pw-notes-background);
+	border: 1px solid var(--pw-border-color);
+	border-radius: var(--pw-input-radius);
+	box-sizing: border-box;
+	margin-top: .5rem;
+	min-width: 14rem;
+	padding: .75rem;
+}
+
+.ProcessKern .KernRevokeConfirm p {
+	font-size: .8rem;
+	margin: 0 0 .65rem;
+}
+
+.ProcessKern .KernRevokeControl.is-full .KernRevokeConfirm,
+.ProcessKern .KernRevokeControl.is-full .uk-button {
+	width: 100%;
+}
+
+.ProcessKern .KernForm,
+.ProcessKern .KernDetails,
+.ProcessKern .KernCode {
+	border: 1px solid var(--pw-border-color);
+	border-radius: var(--pw-input-radius);
+	margin-block: 1rem;
+	padding: 1rem;
+}
+
+.ProcessKern .KernForm label {
+	display: grid;
+	font-weight: 600;
+	gap: .35rem;
+}
+
+.ProcessKern .KernFormGrid,
+.ProcessKern .KernCompare {
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+	margin-bottom: 1rem;
+}
+
+.ProcessKern .KernForm label > small {
+	color: var(--pw-muted-color);
+	font-weight: 400;
+}
+
+.ProcessKern .KernActions {
+	margin: 1rem 0 0;
+}
+
+.ProcessKern .KernDetails {
+	display: grid;
+	gap: .65rem 1rem;
+	grid-template-columns: minmax(8rem, 12rem) 1fr;
+}
+
+.ProcessKern .KernDetails dt {
+	font-weight: 600;
+}
+
+.ProcessKern .KernDetails dd {
+	margin: 0;
+}
+
+.ProcessKern .KernRawValue pre,
+.ProcessKern .AdminDataTable pre {
+	background: var(--pw-code-background);
+	border-radius: var(--pw-input-radius);
+	color: var(--pw-code-color);
+	max-height: 24rem;
+	overflow: auto;
+	padding: .75rem;
+	white-space: pre-wrap;
+}
+
+.ProcessKern .KernCode code {
+	font-size: 1.2rem;
+	margin-left: .5rem;
+}
+
+.ProcessKern .KernInline {
+	display: inline;
+}
+
+@media (max-width: 639px) {
+	.ProcessKern .KernWorkspaceHead,
+	.ProcessKern .KernCardHead {
+		align-items: stretch;
+		flex-direction: column;
+	}
+
+	.ProcessKern .KernAccessEditIntro {
+		align-items: stretch;
+		flex-direction: column;
+	}
+
+	.ProcessKern .KernAccessRuleSummary {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.ProcessKern .KernAccessRuleSummary > div:nth-child(3) {
+		border-left: 0;
+	}
+
+	.ProcessKern .KernAccessRuleSummary > div:nth-child(n+3) {
+		border-top: 1px solid var(--pw-border-color);
+	}
+
+	.ProcessKern .KernWorkspaceActions .uk-button {
+		width: 100%;
+	}
+
+	.ProcessKern .KernDashboardStatGrid > * {
+		box-sizing: border-box;
+		width: 50%;
+	}
+
+	.ProcessKern .KernDashboardStatGrid .KernStatCard {
+		min-height: 7rem;
+		padding: .75rem;
+	}
+
+	.ProcessKern .KernDashboardStatGrid .KernStatIcon {
+		display: none;
+	}
+
+	.ProcessKern .KernDashboardStatGrid .KernStatValue {
+		font-size: 1.75rem;
+	}
+
+	.ProcessKern .KernDashboardIntroAside {
+		align-items: stretch;
+		justify-items: stretch;
+	}
+
+	.ProcessKern .KernDashboardHealth {
+		min-width: 0;
+	}
+
+	.ProcessKern .KernQueueSummary {
+		align-items: flex-start;
+	}
+
+	.ProcessKern .KernClaimStatGrid .KernStatCard {
+		min-height: 7rem;
+		padding: .75rem;
+	}
+
+	.ProcessKern .KernClaimStatGrid .KernStatIcon {
+		display: none;
+	}
+
+	.ProcessKern .KernClaimStatGrid .KernStatValue {
+		font-size: 1.75rem;
+	}
+
+	.ProcessKern .KernClaimMeta {
+		grid-template-columns: 1fr;
+	}
+
+	.ProcessKern .KernAccessStatGrid .KernStatCard {
+		min-height: 7rem;
+		padding: .75rem;
+	}
+
+	.ProcessKern .KernAccessStatGrid .KernStatIcon {
+		display: none;
+	}
+
+	.ProcessKern .KernAccessStatGrid .KernStatValue {
+		font-size: 1.75rem;
+	}
+
+	.ProcessKern .KernAccessCardActions {
+		align-items: stretch;
+		flex-direction: column;
+	}
+
+	.ProcessKern .KernAccessCardActions > * {
+		box-sizing: border-box;
+		width: 100%;
+	}
+
+	.ProcessKern .KernCodeReveal {
+		align-items: stretch;
+		flex-direction: column;
+	}
+
+	.ProcessKern .KernCodeReveal code {
+		text-align: center;
+	}
+
+	.ProcessKern .KernCodeMeta {
+		grid-template-columns: 1fr;
+	}
+
+	.ProcessKern .KernHistoryWorkspace .KernWorkspaceHead {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+
+	.ProcessKern .KernHistoryStatGrid .KernStatCard {
+		min-height: 7rem;
+		padding: .75rem;
+	}
+
+	.ProcessKern .KernHistoryStatGrid > * {
+		box-sizing: border-box;
+		width: 50%;
+	}
+
+	.ProcessKern .KernHistoryStatGrid .KernStatIcon {
+		display: none;
+	}
+
+	.ProcessKern .KernHistoryStatGrid .KernStatValue {
+		font-size: 1.4rem;
+	}
+
+	.ProcessKern .KernHistoryMeta {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.ProcessKern .KernCodeStatGrid .KernStatCard {
+		min-height: 7rem;
+		padding: .75rem;
+	}
+
+	.ProcessKern .KernCodeStatGrid .KernStatIcon {
+		display: none;
+	}
+
+	.ProcessKern .KernCodeStatGrid .KernStatValue {
+		font-size: 1.75rem;
+	}
+
+	.ProcessKern .KernFilters {
+		display: grid;
+		gap: .35rem;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		margin-left: 0;
+	}
+
+	.ProcessKern .KernFilters > * {
+		margin-top: 0;
+		padding-left: 0;
+	}
+
+	.ProcessKern .KernFilters > *::before {
+		display: none;
+	}
+
+	.ProcessKern .KernFilters a {
+		box-sizing: border-box;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	.ProcessKern .KernDetails {
+		grid-template-columns: 1fr;
+	}
+
+	.ProcessKern .KernQueueItem {
+		gap: 1rem;
+	}
+
+	.ProcessKern .KernQueueDecision .uk-button {
+		padding-inline: .75rem;
+	}
+
+	.ProcessKern .KernDashboardActivityItem {
+		gap: .75rem;
+		grid-template-columns: 1fr;
+	}
+
+}
+
+@media (max-width: 1199px) {
+	.ProcessKern .KernReviewAside,
+	.ProcessKern .KernClaimDetailAside,
+	.ProcessKern .KernCodeFormAside {
+		order: -1;
+	}
+
+	.ProcessKern .KernReviewForm,
+	.ProcessKern .KernDecisionCard,
+	.ProcessKern .KernClaimDecisionForm,
+	.ProcessKern .KernClaimDecisionCard,
+	.ProcessKern .KernCodeFormCard {
+		position: static;
+	}
+}
+
+@media (max-width: 959px) {
+	.ProcessKern {
+		overflow-x: clip;
+	}
+
+	.ProcessKern #pw-masthead.pw-masthead-hidden {
+		max-width: 100vw;
+		overflow-x: clip;
+	}
+
+	.ProcessKern #pw-masthead.pw-masthead-hidden > .pw-container {
+		max-width: 100%;
+	}
+
+	.ProcessKern .KernDashboardIntro {
+		grid-template-columns: 1fr;
+	}
+
+	.ProcessKern .KernDashboardIntroAside {
+		align-items: flex-start;
+		justify-items: start;
+	}
+
+	.ProcessKern .KernDashboardSummary {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+
+	.ProcessKern .KernDashboardSummary > a:nth-child(4) {
+		border-left: 0;
+	}
+
+	.ProcessKern .KernDashboardSummary > a:nth-child(n+4) {
+		border-top: 1px solid var(--pw-border-color);
+	}
+
+	.ProcessKern .KernClaimsIntro,
+	.ProcessKern .KernRevisionsIntro,
+	.ProcessKern .KernCodesIntro,
+	.ProcessKern .KernHistoryIntro,
+	.ProcessKern .KernAccessIntro {
+		align-items: stretch;
+		grid-template-columns: 1fr;
+	}
+
+	.ProcessKern .KernClaimQueueState,
+	.ProcessKern .KernRevisionQueueState,
+	.ProcessKern .KernCodeQueueState,
+	.ProcessKern .KernHistoryQueueState,
+	.ProcessKern .KernAccessQueueState {
+		min-width: 0;
+	}
+
+	.ProcessKern .KernAccessIntroAside {
+		align-items: stretch;
+		flex-direction: column;
+	}
+
+	.ProcessKern .KernRevisionDetailIntro,
+	.ProcessKern .KernClaimDetailIntro {
+		align-items: stretch;
+		flex-direction: column;
+	}
+
+	.ProcessKern .KernRevisionDetailActions,
+	.ProcessKern .KernClaimDetailActions {
+		justify-content: space-between;
+	}
+
+	.ProcessKern .KernRevisionDetailSummary,
+	.ProcessKern .KernClaimDetailSummary {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.ProcessKern .KernRevisionDetailSummary > div:nth-child(3),
+	.ProcessKern .KernClaimDetailSummary > div:nth-child(3) {
+		border-left: 0;
+	}
+
+	.ProcessKern .KernRevisionDetailSummary > div:nth-child(n+3),
+	.ProcessKern .KernClaimDetailSummary > div:nth-child(n+3) {
+		border-top: 1px solid var(--pw-border-color);
+	}
+
+	.ProcessKern .KernRevisionTable {
+		display: none;
+	}
+
+	.ProcessKern .KernCompare {
+		grid-template-columns: 1fr;
+	}
+
+	.ProcessKern .KernRevisionCards {
+		display: block;
+	}
+
+	.ProcessKern .KernClaimTable {
+		display: none;
+	}
+
+	.ProcessKern .KernClaimCards {
+		display: block;
+	}
+
+	.ProcessKern .KernAccessTable {
+		display: none;
+	}
+
+	.ProcessKern .KernAccessCards {
+		display: block;
+	}
+
+	.ProcessKern .KernCodeTable {
+		display: none;
+	}
+
+	.ProcessKern .KernCodeCards {
+		display: block;
+	}
+
+	.ProcessKern .KernHistoryTable {
+		display: none;
+	}
+
+	.ProcessKern .KernHistoryCards {
+		display: block;
+	}
+}
+
+@media (max-width: 639px) {
+	.ProcessKern > .ui-autocomplete {
+		left: 1rem !important;
+		max-width: calc(100vw - 2rem);
+		right: 1rem !important;
+		width: auto !important;
+	}
+
+	.ProcessKern .KernStructuredRow dl > div {
+		grid-template-columns: 1fr;
+	}
+
+	.ProcessKern .KernDashboardSummary {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.ProcessKern .KernDashboardSummary > a:nth-child(odd) {
+		border-left: 0;
+	}
+
+	.ProcessKern .KernDashboardSummary > a:nth-child(even) {
+		border-left: 1px solid var(--pw-border-color);
+	}
+
+	.ProcessKern .KernDashboardSummary > a:nth-child(n+3) {
+		border-top: 1px solid var(--pw-border-color);
+	}
+
+	.ProcessKern .KernDashboardClearState {
+		align-items: center;
+	}
+
+	.ProcessKern .KernDashboardClearMeta {
+		display: none;
+	}
+
+	.ProcessKern .KernRevisionDetailActions,
+	.ProcessKern .KernClaimDetailActions {
+		align-items: stretch;
+		flex-direction: column;
+	}
+
+	.ProcessKern .KernRevisionState,
+	.ProcessKern .KernClaimState {
+		border-bottom: 1px solid var(--pw-border-color);
+		border-right: 0;
+		justify-content: space-between;
+		padding: 0 0 .75rem;
+	}
+
+	.ProcessKern .KernRevisionDetailActions .uk-button,
+	.ProcessKern .KernClaimDetailActions .uk-button {
+		box-sizing: border-box;
+		width: 100%;
+	}
+
+	.ProcessKern .KernRevisionDetailSummary,
+	.ProcessKern .KernClaimDetailSummary {
+		grid-template-columns: 1fr;
+	}
+
+	.ProcessKern .KernRevisionDetailSummary > div + div,
+	.ProcessKern .KernClaimDetailSummary > div + div {
+		border-left: 0;
+		border-top: 1px solid var(--pw-border-color);
+	}
+
+	.ProcessKern .KernChange > summary,
+	.ProcessKern .KernChange > .uk-card-body,
+	.ProcessKern .KernRevisionHistorySummary {
+		padding-left: .75rem;
+		padding-right: .75rem;
+	}
+
+	.ProcessKern .KernChangeNumber {
+		flex-basis: 1.5rem;
+		height: 1.5rem;
+	}
+
+	.ProcessKern .KernClaimSummary,
+	.ProcessKern .KernRevisionSummary,
+	.ProcessKern .KernCodeSummary,
+	.ProcessKern .KernHistorySummary,
+	.ProcessKern .KernAccessSummary {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.ProcessKern .KernClaimSummary a:nth-child(3),
+	.ProcessKern .KernRevisionSummary a:nth-child(3),
+	.ProcessKern .KernCodeSummary a:nth-child(3),
+	.ProcessKern .KernHistorySummary > div:nth-child(3),
+	.ProcessKern .KernAccessSummary > div:nth-child(3) {
+		border-left: 0;
+	}
+
+	.ProcessKern .KernClaimSummary a:nth-child(n+3),
+	.ProcessKern .KernRevisionSummary a:nth-child(n+3),
+	.ProcessKern .KernCodeSummary a:nth-child(n+3),
+	.ProcessKern .KernHistorySummary > div:nth-child(n+3),
+	.ProcessKern .KernAccessSummary > div:nth-child(n+3) {
+		border-top: 1px solid var(--pw-border-color);
+	}
+
+	.ProcessKern .KernClaimSearch > div,
+	.ProcessKern .KernRevisionSearch > div,
+	.ProcessKern .KernCodeSearch > div,
+	.ProcessKern .KernHistorySearch > div,
+	.ProcessKern .KernAccessSearch > div {
+		grid-template-columns: 1fr;
+	}
+
+	.ProcessKern .KernClaimSearch .uk-button,
+	.ProcessKern .KernRevisionSearch .uk-button,
+	.ProcessKern .KernCodeSearch .uk-button,
+	.ProcessKern .KernHistorySearch .uk-button,
+	.ProcessKern .KernAccessSearch .uk-button {
+		width: 100%;
+	}
+}
